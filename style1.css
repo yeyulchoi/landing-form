@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color:white;
+    line-height:1.5rem;
+    
+}
+
+.wrapper{
+    min-height:100vh;
+    background: linear-gradient(
+        to bottom, rgba(255,64,50,0.6),
+        rgba(71,71,116,0.6)
+    ), url('./image.jpg') no-repeat center center 
+    
+    ;}
+
+/* header */
+.header{
+   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;
+}
+.header .logo{
+    width:100px; 
+}
+.header .header-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.header .header-right i{
+    margin-right:5px;
+}
+.header .header-right a{
+    color:white;
+}
+.header .header-right a:hover{
+    color:#ff4032;
+}
+
+/* main content */
+
+.main-content{
+    display:flex;
+    max-width:1100px;
+    margin: 200px auto;
+    justify-content: center;
+    align-items: start;
+    gap:50px;
+    height:100%; 
+    padding:0 40px;
+    
+    
+}
+.main-content form{
+    flex:1;
+
+}
+.main-content .text-container{
+    flex:1
+}
+
+/* form */
+
+.form-group{
+    margin-bottom:15px;
+}
+.form-group label{
+    display:block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight:600 ;
+}
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:15px;
+    border:0;
+    border-radius:5px;
+    background-color: rgba(255,255,255,0.2);
+    outline:0
+
+}
+
+.form-group textarea{
+    height:100px;
+    resize:none;
+    margin-bottom;
+}
+
+/* button */
+.btn{
+    display:block;
+    padding:15px 20px;
+    border:0;
+    border-radius:20px;
+    background-color:red;
+    color:white;
+    font-size:16px;
+    outline:0;
+    width:100%;
+    cursor:pointer;
+}
+.btn:hover{
+    background-color: #ff5c4d;
+}
+
+
+/* text container */
+
+.text-container  h1{
+    font-size:50px;
+    line-height: 1.2;
+    margin:50px 0 20px;
+
+}
+
+.text-container{
+    font-size:18px;
+}
+
+/* my note 
+
+wrapper's height changed from height to min-height, then
+the black empty space is filled in when main height is 
+set to 100%.   prevented overflow.
+
+
+.main-content form{
+    flex:1;
+
+}
+.main-content .text-container{
+    flex:1
+}
+    flex # is to represent the relative space in using flex.
+    I think it is same effect of 1fr 1fr for grid.
+
+when working on background image linear-gradient is good use
+.wrapper{
+    min-height:100vh;
+    background: linear-gradient(
+        to bottom, rgba(255,64,50,0.6),
+        rgba(71,71,116,0.6)
+    ), url('./image.jpg') no-repeat center center 
+    
+    ;}
+
+
+
+     background-color: rgba(255,255,255,0.2);
+    outline:0
+
+.form-group textarea{
+    height:100px;
+    resize:none;
+    margin-bottom:
+}
+In CSS, the font-size property set on a parent element (in this case, .text-container) will apply to all child elements unless those child elements have their own font-size specified. Since you have explicitly set the font-size for the h1 element inside .text-container to 50px, this value overrides the 18px value set on .text-container.
+*/
